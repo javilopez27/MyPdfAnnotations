@@ -1,2 +1,26 @@
 # MyPdfAnnotations
-Extracción de la información subrayada en un pdf para tenerlo todo más automatizado.
+
+PDF Text Extractor es una aplicación web que permite a los usuarios subir archivos PDF y extraer automáticamente cualquier texto que esté subrayado o resaltado.
+
+## Características
+
+- Carga de archivos PDF.
+- Extracción de texto subrayado y resaltado.
+- Descarga de los textos extraídos en un archivo de texto.
+
+## Tecnologías Utilizadas
+
+- Python 3.8+
+- Flask para el servidor web.
+- PyPDF2 para manejar los archivos PDF.
+
+## Instalación
+
+Para instalar y ejecutar este proyecto localmente, sigue estos pasos:
+
+POR DEFINIR
+```bash
+git clone https://github.com/tu-usuario/pdf-text-extractor.git
+cd pdf-text-extractor
+pip install -r requirements.txt
+flask run
