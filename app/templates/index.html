@@ -2,15 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>PDF Text Extractor</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Upload and Download Text from PDF</title>
 </head>
 <body>
-    <h1>PDF Text Extractor</h1>
+    <h1>Upload PDF</h1>
     <form action="/" method="post" enctype="multipart/form-data">
-        <input type="file" name="pdf_file">
-        <button type="submit">Upload and Extract Text</button>
+        <input type="file" name="pdf_file" accept="application/pdf">
+        <button type="submit">Upload PDF</button>
     </form>
-    <div id="extracted-text"></div>
 </body>
 </html>

@@ -1,11 +1,11 @@
 # MyPdfAnnotations
 
-PDF Text Extractor es una aplicación web que permite a los usuarios subir archivos PDF y extraer automáticamente cualquier texto que esté subrayado o resaltado.
+My PDF Annotations es una aplicación web que permite a los usuarios subir archivos PDF y extraer automáticamente cualquier texto que esté subrayado, resaltado y texto libre.
 
 ## Características
 
 - Carga de archivos PDF.
-- Extracción de texto subrayado y resaltado.
+- Extracción de texto subrayado, resaltado y texto libre.
 - Descarga de los textos extraídos en un archivo de texto.
 
 ## Tecnologías Utilizadas
@@ -13,6 +13,7 @@ PDF Text Extractor es una aplicación web que permite a los usuarios subir archi
 - Python 3.8+
 - Flask para el servidor web.
 - PyPDF2 para manejar los archivos PDF.
+- 
 
 ## Instalación
 
@@ -24,3 +25,10 @@ git clone https://github.com/javilopez27/mypdfannotations.git
 cd mypdfannotations
 pip install -r requirements.txt
 flask run
+Abre tu navegador y visita `http://127.0.0.1:5000` para subir un archivo PDF.
+
+## Licencia
+Distribuido bajo la licencia MIT. Ver `LICENSE` para más información.
+
+## Autores
+- Javier López Palacios
