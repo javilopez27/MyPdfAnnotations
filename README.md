@@ -20,7 +20,7 @@ Para instalar y ejecutar este proyecto localmente, sigue estos pasos:
 
 POR DEFINIR
 ```bash
-git clone https://github.com/tu-usuario/pdf-text-extractor.git
-cd pdf-text-extractor
+git clone https://github.com/javilopez27/mypdfannotations.git
+cd mypdfannotations
 pip install -r requirements.txt
 flask run
