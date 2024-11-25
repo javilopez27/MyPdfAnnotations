@@ -1,0 +1,4 @@
+# Descarga de Dependencias necesarias
+
+flask == 3.1.0
+PyPDF == 5.1.0
