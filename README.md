@@ -25,6 +25,8 @@ git clone https://github.com/javilopez27/mypdfannotations.git
 cd mypdfannotations
 pip install -r requirements.txt
 flask run
+```
+
 Abre tu navegador y visita `http://127.0.0.1:5000` para subir un archivo PDF.
 
 ## Licencia
