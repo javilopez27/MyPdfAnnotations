@@ -3,3 +3,5 @@
 flask == 3.1.0
 PyPDF == 5.1.0
 pymupdf
+flask_testing
+pytest

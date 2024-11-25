@@ -121,6 +121,9 @@ celerybeat.pid
 # init.sh
 init.sh
 
+# prueba pdf
+javier_generated_resume.pdf
+
 # SageMath parsed files
 *.sage.py
 
