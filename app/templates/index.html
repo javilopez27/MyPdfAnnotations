@@ -2,13 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Upload and Download Text from PDF</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload PDF</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        .notification {
+            visibility: hidden;
+            min-width: 250px;
+            margin-left: -125px;
+            background-color: #f44336;
+            color: white;
+            text-align: center;
+            border-radius: 2px;
+            padding: 16px;
+            position: fixed;
+            z-index: 1;
+            left: 50%;
+            bottom: 30px;
+            font-size: 17px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Upload PDF</h1>
-    <form action="/" method="post" enctype="multipart/form-data">
-        <input type="file" name="pdf_file" accept="application/pdf">
-        <button type="submit">Upload PDF</button>
-    </form>
+    <div class="upload-container">
+        <h1>Upload PDF</h1>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <div class="upload-btn-wrapper">
+                <button type="button" class="btn" id="uploadBtn">Select File</button>
+                <input type="file" name="pdf_file" accept="application/pdf" id="fileInput" style="display: none;">
+            </div>
+            <p id="fileName"></p>
+            <br>
+            <button type="submit" class="btn">Upload PDF</button>
+        </form>
+    </div>
+    <div class="notification" id="notification">Archivo cargado con éxito!</div>
+
+    <script>
+        document.getElementById('uploadBtn').onclick = function() {
+            document.getElementById('fileInput').click();
+        };
+        document.getElementById('fileInput').onchange = function() {
+            var fileInput = document.getElementById('fileInput');
+            var fileNameDisplay = document.getElementById('fileName');
+            if (fileInput.files.length > 0) {
+                var fileName = fileInput.files[0].name;
+                fileNameDisplay.textContent = 'Selected File: ' + fileName; // Display the selected file name
+                document.getElementById('uploadBtn').style.backgroundColor = '#4CAF50'; // Change the button color
+
+                // Show notification
+                var notification = document.getElementById('notification');
+                notification.style.visibility = 'visible';
+                setTimeout(function() {
+                    notification.style.visibility = 'hidden';
+                }, 4000);
+            }
+        };
+    </script>
 </body>
 </html>

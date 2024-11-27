@@ -1,8 +1,45 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 40px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
-
-input, button {
-    margin-top: 10px;
+.upload-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.upload-container h1 {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+}
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+.btn {
+    border: 2px solid #0066cc;
+    color: white;
+    background-color: #0056b3;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+.btn:hover, .btn:focus {
+    background-color: #004494;
 }
